@@ -1,5 +1,6 @@
 import React from 'react'
-import GetStarted from './Buttons/GetStarted'
+import GetStarted from './Buttons/GetStarted';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -7,12 +8,12 @@ const Header = () => {
             <div className='max-w-[1200px] mx-auto w-full'>
                 <div className="flex justify-between items-center">
                     <div>
-                        <a href="/#" className='text-3xl font-bold text-white'>FCM</a>
+                        <Link to="/" className='text-3xl font-bold text-white'>FCM</Link>
                     </div>
                     <div>
                         <ul className='flex gap-4 items-center'>
                             <li className='text-white font-semibold'>
-                                <a href="">Templates</a>
+                                <Link to="/templates">Templates</Link>
                             </li>
                             <li>
                                 <GetStarted />
